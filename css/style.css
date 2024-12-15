@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.clear-fix{
+    clear: both;
+}
+section{
+    background-image: url(../imgs/pexels-gochrisgoxyz-1477166.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section .logo{
+    text-align: center;
+}
+section .logo img{
+    width: 15%;
+}
+.cards{
+    width: 85%;
+    margin: auto;
+}
+.card{
+    float: left;
+    /* background-color: aqua; */
+    width: 33.33333%;
+    padding: 0 20px;
+}
+.card .inner{
+    text-align: center;
+}
+.cards .card .inner .img{
+    /* background-color: aqua; */
+    position: relative;
+
+}
+.card .inner img{
+    width: 100%;
+}
+
+.cards .card .inner .img-layer{
+    position: absolute;
+    inset: 0;
+    border-radius: 43px;
+    transition: background-color .5s;
+}
+.cards .card .inner .img-layer:hover{
+    background-color: rgba(0, 0, 0, 0.495);
+}
+.cards .card .inner .layer{
+    position: absolute;
+    inset: 0;
+    border-radius: 43px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition-duration: .8s;
+    color: white;
+    line-height: 1.5;
+}
+.cards .card .inner .img:hover .layer{
+    transform: scaleY(100%);
+    margin-top: 180px;
+}
+
+.price{
+    width: 80%;
+    margin: auto;
+    padding: 12px 40px;
+}
+.price .offer{
+    float: left;
+    color: white;
+}
+.price .past{
+    float: right;
+    color: gray;
+}
+button{
+    border-radius: 20px;
+    background-color: #4682B4;
+    padding: 10px 15px;
+    border: 0;
+    color: white;
+    transition-duration: .5s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: yellowgreen;
+}
